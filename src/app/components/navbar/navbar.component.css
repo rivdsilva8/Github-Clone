@@ -1,0 +1,56 @@
+/* Reset default margin and padding */
+body,
+nav,
+ul,
+li,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navbar container */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -19px;
+}
+
+/* Style the navbar title */
+h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Style the list items */
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin-left: 10px;
+}
+
+/* Style the links */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style the active link */
+.active {
+  font-weight: bold;
+}

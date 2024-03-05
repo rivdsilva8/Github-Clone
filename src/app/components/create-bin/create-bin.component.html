@@ -1,0 +1,42 @@
+<form class="container" [formGroup]="binForm">
+  <h4>Create code snippet</h4>
+  <br />
+  <label for="title">Title: </label>
+  <input name="title" type="text" placeholder="Title" [formControl]="title" />
+  <h5 class="red-text" [hidden]="title.valid || title.untouched">
+    Title is required
+  </h5>
+  <label for="author">Author: </label>
+  <input
+    name="author"
+    type="text"
+    placeholder="enter author"
+    [formControl]="author"
+  />
+  <h5 class="red-text" [hidden]="title.valid || title.untouched">
+    author is required
+  </h5>
+  <label for="hashtags">Hashtags: </label>
+  <input
+    name="hashtags"
+    type="text"
+    placeholder="c++, python, Js"
+    [formControl]="hashtags"
+  />
+
+  <br />
+  <label for="code-snippet">Code Snippet: </label>
+  <textarea
+    name="code-snippet"
+    type="textarea"
+    placeholder="code snippet here"
+    [formControl]="code"
+  ></textarea>
+  <h5 class="red-text" [hidden]="code.valid || code.untouched">
+    Code is required
+  </h5>
+  <br />
+  <button class="btn-green" [disabled]="binForm.invalid" (click)="save()">
+    Create
+  </button>
+</form>

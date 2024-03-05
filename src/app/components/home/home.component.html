@@ -1,0 +1,39 @@
+<div>
+  <form class="container" (submit)="searchItems($event)">
+    <label for="search-form">Search code by hashtags/title/author:</label>
+    <input
+      type="text"
+      class="search-form"
+      name="saerchTerm"
+      [(ngModel)]="searchTerm"
+    />
+    <button type="submit">Search</button>
+  </form>
+  <ul>
+    <!-- Check if items array is empty -->
+    <ng-container *ngIf="items.length === 0; else itemsList">
+      <li>No data</li>
+    </ng-container>
+    <!-- Loop through items -->
+    <ng-template #itemsList>
+      <li *ngFor="let item of items; trackBy: trackById" class="snippet-item">
+        <div class="snippet-content">
+          <a [routerLink]="['/snippet', item.id]">
+            <span class="title">{{ item.title }}</span>
+            <span class="author"
+              >by: {{ item.author ? item.author : "unknown" }}</span
+            >
+          </a>
+          <!-- Align hashtags to the right -->
+          <div class="hashtagsSection">
+            <ul class="hashtag-ul">
+              <li *ngFor="let hashtag of item.hashtags">
+                {{ hashtag }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ng-template>
+  </ul>
+</div>

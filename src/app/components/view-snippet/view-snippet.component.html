@@ -1,0 +1,20 @@
+<div class="infoBox">
+  <div class="topItems">
+    <div class="titleAuthor">
+      <h3>{{ codeSnippet.title }}</h3>
+      <span>By: {{ codeSnippet.author }}</span>
+    </div>
+    <div class="hashtagsSection">
+      <h5 class="hashtagsLabel">Hashtags:</h5>
+      <ul class="hashtag-ul">
+        <li
+          *ngFor="let hashtag of codeSnippet.hashtags"
+          [style.color]="getRandomColor()"
+        >
+          {{ hashtag }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <pre class="codeBox">{{ codeSnippet.code }}</pre>
+</div>

@@ -1,0 +1,106 @@
+ul {
+  list-style: none;
+  padding-right: 30px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  display: flex; /* Add flex display to the form */
+  align-items: center; /* Align items vertically */
+}
+
+label {
+  margin-top: 10px;
+  padding-bottom: -7px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 10%;
+  cursor: pointer;
+  color: #000000;
+  background-color: aquamarine;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(97, 233, 187);
+  cursor: pointer;
+}
+.title {
+  font-size: 22px; /* Adjust font size as needed */
+  font-weight: bold; /* Optionally make the title bold */
+  margin-right: 10px; /* Add margin between title and author */
+}
+
+.author {
+  font-size: 18px; /* Adjust font size as needed */
+  color: #ccc; /* Optionally change color */
+}
+.snippet-item {
+  margin-bottom: 20px;
+}
+
+.hashtagsLabel {
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold; /* Optionally make the label bold */
+  color: white;
+  margin-right: 0px;
+}
+
+.hashtag {
+  font-size: 14px; /* Adjust font size as needed */
+  color: #555; /* Set the color for hashtags */
+  margin-right: 5px; /* Add margin between hashtags */
+  padding: 3px 8px; /* Add padding to each hashtag item */
+}
+
+.snippet-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #717171;
+  font-size: 20px;
+  padding: 10px; /* Add padding to create equal spacing */
+  border-radius: 5px;
+  color: aquamarine; /* Set the color for the label */
+}
+
+.snippet-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.hashtagsSection {
+  display: flex;
+  align-items: center;
+}
+
+.hashtagsLabel {
+  margin-right: 10px;
+}
+
+.hashtag-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hashtag-ul li {
+  margin-right: 5px;
+}
