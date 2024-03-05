@@ -62,9 +62,9 @@ export class DbService {
 
     querySnapshot.forEach((doc) => {
       const data = doc.data();
-      // Check if searchTerm is empty or undefined, or if the document matches the searchTerm
+
       const matchesSearchTerm =
-        !searchTerm || // Empty search term
+        !searchTerm ||
         data['title']?.toLowerCase()?.includes(searchTerm.toLowerCase()) ||
         data['author']?.toLowerCase()?.includes(searchTerm.toLowerCase()) ||
         data['hashtags']?.some((tag: string) =>

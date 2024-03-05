@@ -7,10 +7,7 @@
     <div class="hashtagsSection">
       <h5 class="hashtagsLabel">Hashtags:</h5>
       <ul class="hashtag-ul">
-        <li
-          *ngFor="let hashtag of codeSnippet.hashtags"
-          [style.color]="getRandomColor()"
-        >
+        <li *ngFor="let hashtag of codeSnippet.hashtags">
           {{ hashtag }}
         </li>
       </ul>

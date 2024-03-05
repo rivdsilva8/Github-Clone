@@ -1,5 +1,3 @@
-/* code-snippet.component.css */
-
 .infoBox {
   margin: 10px 20px;
   padding: 10px;
@@ -19,10 +17,11 @@
 }
 
 .hashtag-ul {
-  background-color: #e2ffe2;
+  background-color: #000000;
   list-style: none;
   padding: 0;
   margin: 10px;
+  color: aquamarine;
   display: flex;
 }
 

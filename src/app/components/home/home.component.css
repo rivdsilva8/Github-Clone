@@ -13,6 +13,10 @@ ul {
   align-items: center; /* Align items vertically */
 }
 
+.search-form:focus {
+  outline: none;
+}
+
 label {
   margin-top: 10px;
   padding-bottom: -7px;
@@ -41,6 +45,11 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: rgb(97, 233, 187);
+  cursor: pointer;
+}
+
+button[type="submit"]:active {
+  background-color: rgb(58, 179, 139);
   cursor: pointer;
 }
 .title {
